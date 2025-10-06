@@ -38,8 +38,8 @@
       margin: 10px auto 30px;
       line-height: 1.5;
     }
-    .download-btn {
-      background-color: #3a8ef6;
+    .download-btn, .telegram-btn {
+      display: inline-block;
       border: none;
       border-radius: 30px;
       padding: 15px 40px;
@@ -48,9 +48,19 @@
       cursor: pointer;
       text-decoration: none;
       transition: background 0.3s;
+      margin: 10px;
+    }
+    .download-btn {
+      background-color: #3a8ef6;
     }
     .download-btn:hover {
       background-color: #1e66d2;
+    }
+    .telegram-btn {
+      background-color: #0088cc;
+    }
+    .telegram-btn:hover {
+      background-color: #0077b6;
     }
     footer {
       margin-top: 80px;
@@ -71,9 +81,14 @@
     <h2>Experience the Power of IWACU VPN</h2>
     <p>Fast, secure, and unlimited VPN access for Android. Protect your data and bypass restrictions with our free VPN app.</p>
 
-    <!-- Change this link below to your APK or MediaFire URL -->
+    <!-- Download button -->
     <a href="https://www.mediafire.com/file/your_apk_link_here/IWACUVPN.apk/file" class="download-btn">
       ⬇️ Download Free VPN
+    </a>
+
+    <!-- Telegram button -->
+    <a href="https://t.me/DemonTennel" target="_blank" class="telegram-btn">
+      💬 Join Telegram
     </a>
   </div>
 
