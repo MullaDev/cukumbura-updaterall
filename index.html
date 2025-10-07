@@ -45,30 +45,52 @@
       font-size: 16px;
       margin-bottom: 20px;
     }
-    /* Screenshot Gallery */
+    /* App Screenshots Section */
 .screenshots {
   margin-top: 50px;
+  text-align: center;
 }
+
 .screenshots h2 {
   color: #3a8ef6;
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-family: 'Serif';
+  font-weight: bold;
 }
+
 .screenshot-gallery {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* keep them in one horizontal line */
+  overflow-x: auto;  /* allows scrolling on small screens */
+  padding: 10px;
 }
+
 .screenshot-gallery img {
-  width: 200px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(58, 142, 246, 0.3);
+  width: 220px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(58, 142, 246, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .screenshot-gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(58, 142, 246, 0.6);
+  box-shadow: 0 0 25px rgba(58, 142, 246, 0.8);
+}
+
+/* Mobile Friendly */
+@media (max-width: 700px) {
+  .screenshot-gallery {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .screenshot-gallery img {
+    width: 180px;
+  }
 }
     .btn {
       display: inline-block;
