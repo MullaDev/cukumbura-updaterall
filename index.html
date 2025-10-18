@@ -46,52 +46,52 @@
       margin-bottom: 20px;
     }
     /* App Screenshots Section */
-.screenshots {
-  margin-top: 50px;
-  text-align: center;
-}
+    .screenshots {
+      margin-top: 50px;
+      text-align: center;
+    }
 
-.screenshots h2 {
-  color: #3a8ef6;
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-family: 'Serif';
-  font-weight: bold;
-}
+    .screenshots h2 {
+      color: #3a8ef6;
+      font-size: 24px;
+      margin-bottom: 25px;
+      font-family: 'Serif';
+      font-weight: bold;
+    }
 
-.screenshot-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: nowrap; /* keep them in one horizontal line */
-  overflow-x: auto;  /* allows scrolling on small screens */
-  padding: 10px;
-}
+    .screenshot-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: nowrap; /* keep them in one horizontal line */
+      overflow-x: auto;  /* allows scrolling on small screens */
+      padding: 10px;
+    }
 
-.screenshot-gallery img {
-  width: 220px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(58, 142, 246, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .screenshot-gallery img {
+      width: 220px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(58, 142, 246, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.screenshot-gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(58, 142, 246, 0.8);
-}
+    .screenshot-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(58, 142, 246, 0.8);
+    }
 
-/* Mobile Friendly */
-@media (max-width: 700px) {
-  .screenshot-gallery {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-  .screenshot-gallery img {
-    width: 180px;
-  }
-}
+    /* Mobile Friendly */
+    @media (max-width: 700px) {
+      .screenshot-gallery {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+      }
+      .screenshot-gallery img {
+        width: 180px;
+      }
+    }
     .btn {
       display: inline-block;
       border: none;
@@ -145,9 +145,23 @@
       font-size: 13px;
       color: #ddd;
     }
+    .version-info {
+      margin-top: 15px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .version-info span {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
     @media (max-width: 600px) {
       .social-buttons { flex-direction: column; }
       .btn { width: 80%; }
+      .version-info { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
@@ -166,14 +180,14 @@
   </div>
 
   <!-- App Screenshots Section -->
-<div class="screenshots">
-  <h2>App Preview</h2>
-  <div class="screenshot-gallery">
-    <img src="Screenshot_20251006-063447.png" alt="IWACU VPN Screenshot 1">
-    <img src="Screenshot_20251006-063459.png" alt="IWACU VPN Screenshot 2">
-    <img src="Screenshot_20251006-092928.png" alt="IWACU VPN Screenshot 3">
+  <div class="screenshots">
+    <h2>App Preview</h2>
+    <div class="screenshot-gallery">
+      <img src="Screenshot_20251006-063447.png" alt="IWACU VPN Screenshot 1">
+      <img src="Screenshot_20251006-063459.png" alt="IWACU VPN Screenshot 2">
+      <img src="Screenshot_20251006-092928.png" alt="IWACU VPN Screenshot 3">
+    </div>
   </div>
-</div>
 
   <section>
     <h2>Why Choose IWACU VPN?</h2>
@@ -207,9 +221,13 @@
   </section>
 
   <footer>
+    <div class="version-info">
+      <span>Application Version: 1.2</span>
+      <span>Last Updated: 18-October-2025</span>
+    </div>
     <p>© 2025 IWACU VPN. All rights reserved.</p>
     <p>Best Free VPN App for Android — Powered by Demon Emperor</p>
   </footer>
 
 </body>
-        </html>
+</html>
