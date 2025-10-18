@@ -27,6 +27,7 @@
       height: 120px;
       border-radius: 20px;
       margin-bottom: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
     }
     .download-card {
       background: rgba(255, 255, 255, 0.1);
@@ -48,20 +49,27 @@
     .version-info {
       display: flex;
       justify-content: space-between;
-      margin: 15px 0;
-      padding: 10px 15px;
-      background: rgba(255, 255, 255, 0.1);
+      margin: 20px 0;
+      padding: 12px 15px;
+      background: rgba(255, 255, 255, 0.15);
       border-radius: 10px;
       font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
     .version-info span {
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1;
     }
     .version-info strong {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 5px;
+      color: #e0e0ff;
+    }
+    .version-info .value {
+      font-weight: bold;
+      font-size: 15px;
     }
     /* App Screenshots Section */
     .screenshots {
@@ -82,8 +90,8 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-      flex-wrap: nowrap; /* keep them in one horizontal line */
-      overflow-x: auto;  /* allows scrolling on small screens */
+      flex-wrap: nowrap;
+      overflow-x: auto;
       padding: 10px;
     }
 
@@ -93,6 +101,7 @@
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(58, 142, 246, 0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.2);
     }
 
     .screenshot-gallery img:hover {
@@ -124,16 +133,33 @@
       text-decoration: none;
       transition: background 0.3s, transform 0.2s;
       margin: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     .btn:hover {
       transform: scale(1.05);
     }
-    .download-btn { background-color: #25D366; } /* Green Download Button */
-    .download-btn:hover { background-color: #1ebc57; }
-    .telegram-btn { background-color: #0088cc; }
-    .telegram-btn:hover { background-color: #0077b6; }
-    .whatsapp-btn { background-color: #128C7E; }
-    .whatsapp-btn:hover { background-color: #0d6f64; }
+    .download-btn { 
+      background-color: #25D366; 
+    } /* Green Download Button */
+    .download-btn:hover { 
+      background-color: #1ebc57; 
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    .telegram-btn { 
+      background-color: #0088cc; 
+    }
+    .telegram-btn:hover { 
+      background-color: #0077b6; 
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    .whatsapp-btn { 
+      background-color: #128C7E; 
+    }
+    .whatsapp-btn:hover { 
+      background-color: #0d6f64; 
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
     .social-buttons {
       display: flex;
       justify-content: center;
@@ -158,6 +184,10 @@
       padding-left: 0;
       list-style: none;
     }
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
     li::before {
       content: "⭐ ";
     }
@@ -166,6 +196,7 @@
       padding: 20px;
       font-size: 13px;
       color: #ddd;
+      margin-top: 30px;
     }
     @media (max-width: 600px) {
       .social-buttons { flex-direction: column; }
@@ -176,7 +207,7 @@
 <body>
 
   <header>
-    <img src="https://via.placeholder.com/120x120/8e44ad/FFFFFF?text=IWACU" alt="IWACU VPN Logo" class="logo">
+    <img src="icon.png" alt="IWACU VPN Logo" class="logo">
     <h1>IWACU VPN</h1>
     <p>Fast • Secure • Unlimited VPN Access</p>
   </header>
@@ -189,11 +220,11 @@
     <div class="version-info">
       <span>
         <strong>Application Version</strong>
-        1.2
+        <span class="value">1.2</span>
       </span>
       <span>
         <strong>Last Updated</strong>
-        18-October-2025
+        <span class="value">18-October-2025</span>
       </span>
     </div>
     
@@ -204,9 +235,9 @@
   <div class="screenshots">
     <h2>App Preview</h2>
     <div class="screenshot-gallery">
-      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+1" alt="IWACU VPN Screenshot 1">
-      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+2" alt="IWACU VPN Screenshot 2">
-      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+3" alt="IWACU VPN Screenshot 3">
+      <img src="Screenshot_20251006-063447.png" alt="IWACU VPN Screenshot 1">
+      <img src="Screenshot_20251006-063459.png" alt="IWACU VPN Screenshot 2">
+      <img src="Screenshot_20251006-092928.png" alt="IWACU VPN Screenshot 3">
     </div>
   </div>
 
