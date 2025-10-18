@@ -45,6 +45,24 @@
       font-size: 16px;
       margin-bottom: 20px;
     }
+    .version-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .version-info span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .version-info strong {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
     /* App Screenshots Section */
     .screenshots {
       margin-top: 50px;
@@ -90,6 +108,10 @@
       }
       .screenshot-gallery img {
         width: 180px;
+      }
+      .version-info {
+        flex-direction: column;
+        gap: 10px;
       }
     }
     .btn {
@@ -145,30 +167,16 @@
       font-size: 13px;
       color: #ddd;
     }
-    .version-info {
-      margin-top: 15px;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .version-info span {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 8px 15px;
-      border-radius: 20px;
-    }
     @media (max-width: 600px) {
       .social-buttons { flex-direction: column; }
       .btn { width: 80%; }
-      .version-info { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="icon.png" alt="IWACU VPN Logo" class="logo">
+    <img src="https://via.placeholder.com/120x120/8e44ad/FFFFFF?text=IWACU" alt="IWACU VPN Logo" class="logo">
     <h1>IWACU VPN</h1>
     <p>Fast • Secure • Unlimited VPN Access</p>
   </header>
@@ -176,6 +184,19 @@
   <div class="download-card">
     <h2>Download IWACU VPN</h2>
     <p>Get the latest version of IWACU VPN for Android and enjoy secure, fast, and unlimited browsing.</p>
+    
+    <!-- Version and Last Updated Info -->
+    <div class="version-info">
+      <span>
+        <strong>Application Version</strong>
+        1.2
+      </span>
+      <span>
+        <strong>Last Updated</strong>
+        18-October-2025
+      </span>
+    </div>
+    
     <a href="https://www.mediafire.com/file/lfx1skl7oucds57/IWACU_VPN_v_1.1.apk/file" class="btn download-btn" target="_blank">Download Now</a>
   </div>
 
@@ -183,9 +204,9 @@
   <div class="screenshots">
     <h2>App Preview</h2>
     <div class="screenshot-gallery">
-      <img src="Screenshot_20251006-063447.png" alt="IWACU VPN Screenshot 1">
-      <img src="Screenshot_20251006-063459.png" alt="IWACU VPN Screenshot 2">
-      <img src="Screenshot_20251006-092928.png" alt="IWACU VPN Screenshot 3">
+      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+1" alt="IWACU VPN Screenshot 1">
+      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+2" alt="IWACU VPN Screenshot 2">
+      <img src="https://via.placeholder.com/220x400/8e44ad/FFFFFF?text=Screenshot+3" alt="IWACU VPN Screenshot 3">
     </div>
   </div>
 
@@ -221,10 +242,6 @@
   </section>
 
   <footer>
-    <div class="version-info">
-      <span>Application Version: 1.2</span>
-      <span>Last Updated: 18-October-2025</span>
-    </div>
     <p>© 2025 IWACU VPN. All rights reserved.</p>
     <p>Best Free VPN App for Android — Powered by Demon Emperor</p>
   </footer>
